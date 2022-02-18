@@ -31,7 +31,7 @@ y_pred = knn.predict(Xscaled_test)
 r2_score(yscaled_test, y_pred)
 
 y_pred = pd.DataFrame(y_pred)
-y_test = pd.DataFrame(yscaled_test, columns = ['true']
+y_test = pd.DataFrame(yscaled_test, columns = ['true'])
 y_test['predication'] = y_pred
 
 y_test.to_csv('/output/Result.csv',index = False)
